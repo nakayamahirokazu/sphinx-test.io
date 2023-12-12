@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html  lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+      <title>02.サービス運用方針</title>
+    
+          <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+          <link rel="stylesheet" href="_static/theme.css " type="text/css" />
+      
+      <!-- sphinx script_files -->
+        <script src="_static/documentation_options.js?v=144c8c96"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="_static/translations.js?v=4dbe4bdc"></script>
+
+      
+      <!-- bundled in js (rollup iife) -->
+      <!-- <script src="_static/theme-vendors.js"></script> -->
+      <script src="_static/theme.js" defer></script>
+    
+  <link rel="index" title="索引" href="genindex.html" />
+  <link rel="search" title="検索" href="search.html" />
+  <link rel="next" title="03.モニタリングとイベント管理_グリッドテーブル" href="03-00-00.html" />
+  <link rel="prev" title="01.運用設計方針" href="01-00-00.html" /> 
+  </head>
+
+  <body>
+    <div id="app">
+    <div class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <router-link to="index.html" class="home-link">
+    
+      <span class="site-name">CARNAS &amp;g Service</span>
+    
+  </router-link>
+
+  <div class="links">
+    <navlinks class="can-hide">
+
+
+
+    </navlinks>
+  </div>
+</navbar>
+
+      
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
+      </div>
+        <sidebar @toggle-sidebar="toggleSidebar">
+          
+          <navlinks>
+            
+
+
+
+            
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">クイック検索</span>
+    <div class="searchformwrapper">
+      <form class="search" action="search.html" method="get">
+        <input type="text" name="q" />
+        <input type="submit" value="検索" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="index.html#carnas-g">carnas &g サービス運用設計書</a></span>
+      </p>
+      <ul class="current">
+        
+          <li class="toctree-l1 ">
+            
+              <a href="00-00-00.html" class="reference internal ">表紙</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="00-00-01.html" class="reference internal ">改訂履歴</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="00-00-02.html" class="reference internal ">はじめに</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="01-00-00.html" class="reference internal ">01.運用設計方針</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 current">
+            
+              <a href="#" class="reference internal current">02.サービス運用方針</a>
+            
+
+            
+              <ul>
+                
+                  <li class="toctree-l2"><a href="#id1" class="reference internal">02.サービス運用方針</a></li>
+                
+              </ul>
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="03-00-00.html" class="reference internal ">03.モニタリングとイベント管理_グリッドテーブル</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="04-00-00.html" class="reference internal ">04.サービスデスク</a>
+            
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+</div>
+        </sidebar>
+
+      <page>
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+    
+    <li>02.サービス運用方針</li>
+  </ul>
+  
+
+  <ul class="page-nav">
+  <li class="prev">
+    <a href="01-00-00.html"
+       title="前の章へ">← 01.運用設計方針</a>
+  </li>
+  <li class="next">
+    <a href="03-00-00.html"
+       title="次の章へ">03.モニタリングとイベント管理_グリッドテーブル →</a>
+  </li>
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main" v-pre>
+            
+  <section id="id1">
+<h1>02.サービス運用方針<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h1>
+<p>2.1 サービス運用方針</p>
+<blockquote>
+<div><p>本サービスの運用項目は、追加要件や運用状況により、随時見直しおよび拡張していく事とする。</p>
+</div></blockquote>
+<p>2.2 運用サービスの概要</p>
+<blockquote>
+<div><p>本サービスは、ITIL（IT Infrastructure Library）に準拠した運用を提供し、これを「運用サービス」と定義する。各サービスで提供する機能については、「ITIL Ver4」の用語を用いて下記の通り定義する。</p>
+</div></blockquote>
+<p>2.3 運用サービスの機能</p>
+<blockquote>
+<div><p>運用サービスの機能は下記とする。</p>
+</div></blockquote>
+<img alt="_images/image001.gif" src="_images/image001.gif" />
+<p>2.4 運用体制</p>
+<blockquote>
+<div><p>システム基盤の運用体制は下記とする。※パイロット期間の運用体制です。</p>
+</div></blockquote>
+<img alt="_images/image0021.gif" src="_images/image0021.gif" />
+<p>2.4.1 各部門の役割</p>
+<blockquote>
+<div><p>本サービスにおける運用体制の構成については、下記とする。</p>
+</div></blockquote>
+<img alt="_images/image003.gif" src="_images/image003.gif" />
+<p>2.4.2 各担当の対応時間</p>
+<blockquote>
+<div><p>各担当の受付時間は、以下の通りとする。※重大インシデントの場合は、原則24時間365日対応</p>
+</div></blockquote>
+<img alt="_images/image0041.gif" src="_images/image0041.gif" />
+<p>2.5 連絡先および連絡手段</p>
+<blockquote>
+<div><p>各担当者間の連絡手段は、Slack、Google Meetを利用した情報共有を基本とする。ユーザーからの連絡先・連絡手段についてはサービス仕様書（原本）を参照。</p>
+</div></blockquote>
+<p>2.6 サービス提供時間・サービス稼働時間</p>
+<blockquote>
+<div><p>サービス提供時間及び稼働時間は以下とする。</p>
+</div></blockquote>
+<img alt="_images/image005.gif" src="_images/image005.gif" />
+<p>2.7 管理体制</p>
+<blockquote>
+<div><p>管理体制として、13のプラクティスの連携を下図に示す。尚、「プロダクト責任者」の責任の元に、「プロダクト担当」が担当し、CARNAS &amp;g運用の全体をコントロールする。</p>
+</div></blockquote>
+<img alt="_images/image006.gif" src="_images/image006.gif" />
+<p>2.7.1 管理範囲と担当者</p>
+<img alt="_images/image007.gif" src="_images/image007.gif" />
+</section>
+
+
+          </div>
+          <div class="page-nav">
+            <div class="inner"><ul class="page-nav">
+  <li class="prev">
+    <a href="01-00-00.html"
+       title="前の章へ">← 01.運用設計方針</a>
+  </li>
+  <li class="next">
+    <a href="03-00-00.html"
+       title="次の章へ">03.モニタリングとイベント管理_グリッドテーブル →</a>
+  </li>
+</ul><div class="footer" role="contentinfo">
+      &#169; Copyright 2023, NJC.
+    <br>
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 7.2.6 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a> 0.8.0.
+</div>
+            </div>
+          </div>
+      </page>
+    </div></div>
+    
+    
+  </body>
+</html>
