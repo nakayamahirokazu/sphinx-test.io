@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html  lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+      <title>04.サービスデスク</title>
+    
+          <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+          <link rel="stylesheet" href="_static/theme.css " type="text/css" />
+      
+      <!-- sphinx script_files -->
+        <script src="_static/documentation_options.js?v=144c8c96"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="_static/translations.js?v=4dbe4bdc"></script>
+
+      
+      <!-- bundled in js (rollup iife) -->
+      <!-- <script src="_static/theme-vendors.js"></script> -->
+      <script src="_static/theme.js" defer></script>
+    
+  <link rel="index" title="索引" href="genindex.html" />
+  <link rel="search" title="検索" href="search.html" />
+  <link rel="prev" title="03.モニタリングとイベント管理_グリッドテーブル" href="03-00-00.html" /> 
+  </head>
+
+  <body>
+    <div id="app">
+    <div class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <router-link to="index.html" class="home-link">
+    
+      <span class="site-name">CARNAS &amp;g Service</span>
+    
+  </router-link>
+
+  <div class="links">
+    <navlinks class="can-hide">
+
+
+
+    </navlinks>
+  </div>
+</navbar>
+
+      
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
+      </div>
+        <sidebar @toggle-sidebar="toggleSidebar">
+          
+          <navlinks>
+            
+
+
+
+            
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">クイック検索</span>
+    <div class="searchformwrapper">
+      <form class="search" action="search.html" method="get">
+        <input type="text" name="q" />
+        <input type="submit" value="検索" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="index.html#carnas-g">carnas &g サービス運用設計書</a></span>
+      </p>
+      <ul class="current">
+        
+          <li class="toctree-l1 ">
+            
+              <a href="00-00-00.html" class="reference internal ">表紙</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="00-00-01.html" class="reference internal ">改訂履歴</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="00-00-02.html" class="reference internal ">はじめに</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="01-00-00.html" class="reference internal ">01.運用設計方針</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="02-00-00.html" class="reference internal ">02.サービス運用方針</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="03-00-00.html" class="reference internal ">03.モニタリングとイベント管理_グリッドテーブル</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 current">
+            
+              <a href="#" class="reference internal current">04.サービスデスク</a>
+            
+
+            
+              <ul>
+                
+                  <li class="toctree-l2"><a href="#id1" class="reference internal">04.サービスデスク</a></li>
+                
+              </ul>
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+</div>
+        </sidebar>
+
+      <page>
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+    
+    <li>04.サービスデスク</li>
+  </ul>
+  
+
+  <ul class="page-nav">
+  <li class="prev">
+    <a href="03-00-00.html"
+       title="前の章へ">← 03.モニタリングとイベント管理_グリッドテーブル</a>
+  </li>
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main" v-pre>
+            
+  <section id="id1">
+<h1>04.サービスデスク<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h1>
+<p>4.1 概要</p>
+<blockquote>
+<div><p>「サービスデスク」は、運用サービスの窓口としてCARNAS&amp;gユーザーからの問合せや障害通告を管理する。</p>
+</div></blockquote>
+<p>4.2 担当者</p>
+<blockquote>
+<div><p>サービスデスクの担当は、「ユーザー問合せ担当」とする。</p>
+</div></blockquote>
+<p>4.3 業務フロー</p>
+<img alt="_images/image0012.gif" src="_images/image0012.gif" />
+<p>4.4 受付時間</p>
+<blockquote>
+<div><p>連絡先は、<a class="reference external" href="https://docs.google.com/document/d/1A50iS0PopCcJG45-XnnfpRZVXhTXjxae3_YT5Igkryk/edit">サービス仕様書</a> を参照とする。</p>
+</div></blockquote>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p>窓口</p></td>
+<td><p>受付時間</p></td>
+<td><p>連絡手段</p></td>
+<td><p>備考</p></td>
+</tr>
+<tr class="row-even"><td rowspan="3"><p>通常窓口</p></td>
+<td rowspan="3"><p>営業日09:00－17:00</p></td>
+<td><p>CARNAS &amp;g問合せ専用フォーム</p></td>
+<td rowspan="3"><p>ー</p></td>
+</tr>
+<tr class="row-odd"><td><p>メール（<a class="reference external" href="mailto:support-carnas&#37;&#52;&#48;njc&#46;co&#46;jp">support-carnas<span>&#64;</span>njc<span>&#46;</span>co<span>&#46;</span>jp</a>）</p></td>
+</tr>
+<tr class="row-even"><td><p>電話（緊急の場合のみ）</p></td>
+</tr>
+<tr class="row-odd"><td rowspan="2"><p>時間外窓口</p></td>
+<td rowspan="2"><p>上記以外の時間帯</p></td>
+<td><p>CARNAS &amp;g問合せ専用フォーム</p></td>
+<td rowspan="2"><p>回答は翌営業日</p></td>
+</tr>
+<tr class="row-even"><td><p>メール（<a class="reference external" href="mailto:support-carnas&#37;&#52;&#48;njc&#46;co&#46;jp">support-carnas<span>&#64;</span>njc<span>&#46;</span>co<span>&#46;</span>jp</a>）</p></td>
+</tr>
+</tbody>
+</table>
+<p>4.5 受付の種類</p>
+<blockquote>
+<div><p>サービスデスクで受付ける内容は、全てインシデントとして扱い、インシデント管理へ引き継ぐものとする。受付内容は、「障害」、「サービス要求」、「問合せ」と区分する。</p>
+</div></blockquote>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p>インシデント区分</p></td>
+<td><p>例</p></td>
+<td><p>説明</p></td>
+</tr>
+<tr class="row-even"><td><p>障害</p></td>
+<td><p>不具合の連絡</p></td>
+<td><p>障害および不具合の連絡</p></td>
+</tr>
+<tr class="row-odd"><td><p>サービス要求</p></td>
+<td><p>ログインユーザーのMFA設定解除</p></td>
+<td><p>システムの妨げにならない正常範囲でのユーザーリクエスト</p></td>
+</tr>
+<tr class="row-even"><td><p>問合せ</p></td>
+<td><p>サービスに対する操作説明</p></td>
+<td><p>各種問合せおよび調査の依頼</p></td>
+</tr>
+</tbody>
+</table>
+<p>4.6 受付内容の記録</p>
+<blockquote>
+<div><p>サービスデスクで受付けた内容は、 <a class="reference external" href="https://carnasproj.atlassian.net/jira/software/c/projects/CSPT/boards/71">JIRA「CARNAS_SUPPORT」プロジェクト</a> に記録する。記録項目は、 <a class="reference external" href="https://docs.google.com/spreadsheets/d/1GzengPrB6el5Ds5u1iHkaEDZZGRFr9iefd4F3TjdiYM/edit#gid=1343823404">パイロット動作検証、利用期間中の対応フロー</a> （「Jiraチケット説明」シート）を参照。</p>
+</div></blockquote>
+<p>4.7 完了連絡</p>
+<blockquote>
+<div><p>受付けた作業の完了や問い合わせへの回答等を、ユーザー問合せ担当が各連絡手段にて通知する。</p>
+</div></blockquote>
+<p>4.8 詳細フロー</p>
+<blockquote>
+<div><p>参照1: <a class="reference external" href="https://docs.google.com/spreadsheets/d/1GzengPrB6el5Ds5u1iHkaEDZZGRFr9iefd4F3TjdiYM/edit#gid=1343823404">パイロット動作検証、利用期間中の対応フロー</a> （「問合せ対応」シート）</p>
+</div></blockquote>
+</section>
+
+
+          </div>
+          <div class="page-nav">
+            <div class="inner"><ul class="page-nav">
+  <li class="prev">
+    <a href="03-00-00.html"
+       title="前の章へ">← 03.モニタリングとイベント管理_グリッドテーブル</a>
+  </li>
+</ul><div class="footer" role="contentinfo">
+      &#169; Copyright 2023, NJC.
+    <br>
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 7.2.6 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a> 0.8.0.
+</div>
+            </div>
+          </div>
+      </page>
+    </div></div>
+    
+    
+  </body>
+</html>
